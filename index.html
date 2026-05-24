@@ -3,98 +3,404 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Pribadi Saya</title>
+  <title>lenyeniU</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- NAVBAR -->
+
   <header class="navbar">
-    <div class="logo">PortofolioKu</div>
+
+    <div class="logo">
+      LETTERBOXD<span class="accent-dot">Ku</span>
+    </div>
+
     <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#favorite">Favorites</a>
       <a href="#media">Media</a>
-      <a href="#contact">Contact</a>
+      <a href="#discussion">Discussion</a>
     </nav>
+
     <div class="auth-buttons">
-      <span id="userInfo" style="margin-right: 15px; color: #4a5568;"></span>
+
+      <span id="usernameDisplay" class="user-info"></span>
+
       <span id="authArea">
-        <button onclick="goLogin()" class="btn-login">Login</button>
+        <a href="login/index.html" class="btn-login">
+          Login
+        </a>
       </span>
+
     </div>
+
   </header>
 
+  <!-- HERO -->
+
   <section id="home" class="hero-section">
-    <div class="hero-content">
-      <img src="assets/gambar1.jpg" alt="Foto Profil" class="profile-img">
-      <h1>Halo, Saya Siswa Kreatif</h1>
-      <p>Selamat datang di ruang digital saya. Saya adalah siswa Kelas X yang sedang belajar mengembangkan website responsif dan fungsional.</p>
-      <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+
+    <div class="hero-container">
+
+      <div class="hero-profile-box">
+        <img src="assets/gambar1.jpg" class="profile-img">
+      </div>
+
+      <div class="hero-text-box">
+
+        <span class="badge-siswa">
+          SISWA NYENI
+        </span>
+
+        <h1>
+          Selamat Datang di Ruang Bebas Berekspresi
+        </h1>
+
+        <p>
+          Tempat kecil untuk membahas film,
+          emosi, dan hal-hal yang sulit dijelaskan
+          lewat kata-kata biasa.
+        </p>
+
+        <a href="#favorite" class="btn-primary">
+          Jelajahi Favorit
+        </a>
+
+      </div>
+
     </div>
+
   </section>
+
+  <!-- ABOUT -->
 
   <section id="about" class="about-section">
-    <h2>Tentang Saya</h2>
-    <p class="about-desc">Saya memiliki minat yang besar dalam dunia teknologi informasi dan desain grafis. Saat ini aktif mempelajari dasar-dasar pemrograman web HTML, CSS, dan JavaScript murni.</p>
-    
-    <div class="skills-container">
-      <h3>Keahlian</h3>
-      <div class="skill-bar"><span class="skill-title">HTML & CSS</span><div class="bar"><div class="progress" style="width: 85%;"></div></div></div>
-      <div class="skill-bar"><span class="skill-title">JavaScript</span><div class="bar"><div class="progress" style="width: 65%;"></div></div></div>
-      <div class="skill-bar"><span class="skill-title">Desain Grafis</span><div class="bar"><div class="progress" style="width: 75%;"></div></div></div>
+
+    <div class="section-header">
+      <h2>MORE ABOUT ME</h2>
     </div>
+
+    <div class="about-content">
+
+      <div class="about-text">
+
+        <p>
+          Aku suka film yang hangat,
+          sedih, absurd, dan terasa manusia.
+        </p>
+
+        <p>
+          Website ini dibuat sebagai tempat
+          untuk berbagi pendapat dan emosi
+          setelah menonton sesuatu.
+        </p>
+
+      </div>
+
+      <div class="about-video">
+
+        <video controls>
+          <source src="assets/video1.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <section id="portfolio" class="portfolio-section">
-    <h2>Portfolio Proyek</h2>
-    <div class="portfolio-grid">
-      <div class="card">
-        <img src="assets/gambar2.jpg" alt="Proyek 1">
-        <h3>Desain UI/UX Muted</h3>
-        <p>Eksperimen pembuatan layout website berkonsep elegan dengan kontras rendah yang nyaman di mata.</p>
-      </div>
-      <div class="card">
-        <img src="assets/gambar3.jpg" alt="Proyek 2">
-        <h3>Aplikasi To-Do List</h3>
-        <p>Proyek JavaScript murni untuk mencatat agenda harian siswa secara lokal di browser web.</p>
-      </div>
-      <div class="card">
-        <img src="assets/gambar4.jpg" alt="Proyek 3">
-        <h3>Kalkulator Sederhana</h3>
-        <p>Aplikasi hitung matematika dasar berbasis web dengan antarmuka bertema pastel.</p>
-      </div>
+  <!-- FAVORITE -->
+
+  <section id="favorite" class="portfolio-section">
+
+    <div class="section-header">
+      <h2>FILM FAVORIT</h2>
     </div>
+
+    <div class="portfolio-grid">
+
+      <!-- MONSTER -->
+
+      <div class="movie-card">
+
+        <div class="poster-wrapper"
+          onclick="openPopup(
+          'assets/gambar2.jpg',
+          'assets/suara1.mp3',
+          'monster'
+          )">
+
+          <img src="assets/gambar2.jpg">
+
+          <div class="poster-overlay">
+            <span>Open Scene</span>
+          </div>
+
+        </div>
+
+        <div class="card-details">
+
+          <h3>MONSTER (2023)</h3>
+
+          <div class="rating-stars">
+            ★★★★★
+          </div>
+
+          <p>
+            Memahami seseorang mungkin adalah
+            bentuk cinta paling mahal.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- LADY BIRD -->
+
+      <div class="movie-card">
+
+        <div class="poster-wrapper"
+          onclick="openPopup(
+          'assets/gambar3.jpg',
+          'assets/suara2.mp3',
+          'ladybird'
+          )">
+
+          <img src="assets/gambar3.jpg">
+
+          <div class="poster-overlay">
+            <span>Open Scene</span>
+          </div>
+
+        </div>
+
+        <div class="card-details">
+
+          <h3>LADY BIRD (2017)</h3>
+
+          <div class="rating-stars">
+            ★★★★★
+          </div>
+
+          <p>
+            Sometimes love and understanding
+            are not the same thing.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- DPS -->
+
+      <div class="movie-card">
+
+        <div class="poster-wrapper"
+          onclick="openPopup(
+          'assets/gambar4.jpg',
+          'assets/suara3.mp3',
+          'dps'
+          )">
+
+          <img src="assets/gambar4.jpg">
+
+          <div class="poster-overlay">
+            <span>Open Scene</span>
+          </div>
+
+        </div>
+
+        <div class="card-details">
+
+          <h3>DEAD POETS SOCIETY</h3>
+
+          <div class="rating-stars">
+            ★★★★★
+          </div>
+
+          <p>
+            The words you don't say
+            are sometimes the loudest.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
+
+  <!-- MEDIA -->
 
   <section id="media" class="media-section">
-    <h2>Media & Lokasi</h2>
-    <div class="media-grid">
-      <div class="media-box">
-        <h3>Video Pembelajaran</h3>
-        <iframe width="100%" height="300" src="https://www.youtube.com/embed/WkEpw5r_SjQ" title="Video Edukasi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="media-box">
-        <h3>Lokasi Sekolah / Rumah</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0524458316235!2d106.82463287583344!3d-6.256828561230193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3c7ed8c26bb%3A0x633da5b6efc7f394!2sKementerian%20Pendidikan%2C%20Kebudayaan%2C%20Riset%2C%20dan%20Teknologi!5e0!3m2!1sid!2sid!4v1716300000000!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+
+    <div class="section-header">
+      <h2>MEDIA</h2>
     </div>
+
+    <div class="media-container">
+
+      <div class="media-frame">
+
+        <h3>
+          <span class="dot green"></span>
+          Video bumi datar
+        </h3>
+
+        <div class="responsive-iframe">
+
+          <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/WkEpw5r_SjQ"
+          allowfullscreen>
+          </iframe>
+
+        </div>
+
+      </div>
+
+      <div class="media-frame">
+
+        <h3>
+          <span class="dot orange"></span>
+          Lokasi sekolah
+        </h3>
+
+        <div class="responsive-iframe">
+
+ <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.844431959954!2d110.3910398758877!3d-7.806297377501062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5765afc739e5%3A0x9afc136372ca6bf5!2sSMA%20Negeri%208%20Yogyakarta!5e0!3m2!1sid!2sid!4v1716300000000!5m2!1sid!2sid"
+width="100%"
+height="315"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+          
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <section id="contact" class="contact-section">
-    <h2>Hubungi Saya</h2>
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Pesan berhasil terkirim!');">
-      <input type="text" placeholder="Nama Lengkap" required>
-      <input type="email" placeholder="Email Anda" required>
-      <textarea rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
-      <button type="submit" class="btn-primary">Kirim Pesan</button>
-    </form>
+  <!-- DISCUSSION -->
+
+  <section id="discussion" class="discussion-section">
+
+    <div class="section-header">
+      <h2>VIDEO DISCUSSION</h2>
+    </div>
+
+    <div class="discussion-grid">
+
+      <!-- VIDEO 2 -->
+
+      <div class="discussion-card">
+
+        <video controls>
+          <source src="assets/video2.mp4" type="video/mp4">
+        </video>
+
+        <h3>Video 2</h3>
+
+        <textarea
+        placeholder="Tulis pendapatmu..."
+        id="comment2">
+        </textarea>
+
+        <button onclick="sendComment(2)">
+          Kirim
+        </button>
+
+        <div id="comments2"></div>
+
+      </div>
+
+      <!-- VIDEO 3 -->
+
+      <div class="discussion-card">
+
+        <video controls>
+          <source src="assets/video3.mp4" type="video/mp4">
+        </video>
+
+        <h3>Video 3</h3>
+
+        <textarea
+        placeholder="Tulis pendapatmu..."
+        id="comment3">
+        </textarea>
+
+        <button onclick="sendComment(3)">
+          Kirim
+        </button>
+
+        <div id="comments3"></div>
+
+      </div>
+
+      <!-- VIDEO 4 -->
+
+      <div class="discussion-card">
+
+        <video controls>
+          <source src="assets/video4.mp4" type="video/mp4">
+        </video>
+
+        <h3>Video 4</h3>
+
+        <textarea
+        placeholder="Tulis pendapatmu..."
+        id="comment4">
+        </textarea>
+
+        <button onclick="sendComment(4)">
+          Kirim
+        </button>
+
+        <div id="comments4"></div>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <footer>
-    <p>&copy; 2026 Website Pribadi. Dibuat untuk Tugas Informatika Kelas X.</p>
+  <!-- FOOTER -->
+
+  <footer class="main-footer">
+    © 2026 LetterboxdKu
   </footer>
 
-  <script src="welcome.js"></script>
+  <!-- POPUP -->
+
+  <div id="popupModal" class="popup-modal">
+
+    <span class="close-popup" onclick="closePopup()">
+      ×
+    </span>
+
+    <div class="popup-content">
+
+      <img id="popupImage" class="popup-image">
+
+      <div id="popupSubtitle" class="popup-subtitle">
+      </div>
+
+      <audio id="popupAudio"></audio>
+
+    </div>
+
+  </div>
+
+  <script src="js/login/welcome.js"></script>
+
 </body>
 </html>
