@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar — LetterboxdKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="auth-card">
+
+    <div class="auth-header">
+      <div class="logo-kecil">LETTERBOXD<span>Ku</span></div>
+      <h2>Buat Akun Baru</h2>
+    </div>
+
+    <!-- pesan sukses / error -->
+    <p id="message" class="pesan-box" style="display:none;"></p>
+
+    <!-- FORM REGISTER -->
+    <form id="registerForm">
+
+      <div class="field-group">
+        <label for="username">Username Baru</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Buat nama pengguna unik"
+          required
+        >
+      </div>
+
+      <div class="field-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Masukkan email"
+          required
+        >
+      </div>
+
+      <div class="field-group">
+        <label for="password">Kata Sandi</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Buat kata sandi baru"
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn-auth-submit">
+        <span id="labelDaftar">Daftar</span>
+      </button>
+
+    </form>
+
+    <div class="auth-footer">
+      <p>
+        Sudah punya akun?
+        <a href="index.html">Masuk di sini</a>
+      </p>
+      <p class="back-home-wrap">
+        <a href="../index.html" class="link-back">← Kembali ke Halaman Utama</a>
+      </p>
+    </div>
+
+  </div>
+
+  <script src="js/register.js"></script>
+
+</body>
+</html>

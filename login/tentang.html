@@ -1,0 +1,74 @@
+<!-- Formulir Daftar -->
+<div id="formDaftarWrap" style="display:none;">
+
+  <h2 class="judul-form">Buat Akun Baru</h2>
+  <p class="sub-form">
+    Bergabunglah dengan Arsip Penjaga Waktu
+  </p>
+
+  <div
+    id="pesanDaftar"
+    class="pesan"
+    style="display:none;"
+  ></div>
+
+  <div id="registerForm">
+
+    <div class="grup-input">
+      <label
+        class="label-input"
+        for="regUsername"
+      >
+        Nama Pengguna
+      </label>
+
+      <input
+        type="text"
+        id="regUsername"
+        name="username"
+        class="kolom-input"
+        placeholder="Pilih nama pengguna"
+        required
+      >
+    </div>
+
+    <div class="grup-input">
+      <label
+        class="label-input"
+        for="regPassword"
+      >
+        Kata Sandi
+      </label>
+
+      <input
+        type="password"
+        id="regPassword"
+        name="password"
+        class="kolom-input"
+        placeholder="Buat kata sandi"
+        required
+      >
+    </div>
+
+    <button
+      type="button"
+      class="tombol-submit"
+      onclick="lakukanDaftar()"
+    >
+      <span id="labelDaftar">Daftar</span>
+    </button>
+
+  </div>
+
+  <div class="pemisah-auth">
+    <span>atau</span>
+  </div>
+
+  <p class="info-auth">
+    Sudah punya akun?
+    <a href="#" onclick="tampilMasuk()">
+      Masuk di sini
+    </a>
+  </p>
+
+</div>

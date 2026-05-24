@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #14181c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #9ab;
+}
+
+/* LOGO KECIL */
+.logo-kecil {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.logo-kecil span {
+  color: #00c030;
+}
+
+/* CARD */
+.auth-card {
+  background-color: #1c2228;
+  width: 100%;
+  max-width: 400px;
+  padding: 35px 30px;
+  border-radius: 16px;
+  border: 1px solid #2a3440;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.auth-header h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* FIELD */
+.field-group {
+  margin-bottom: 18px;
+}
+
+.field-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #9ab;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.field-group input {
+  width: 100%;
+  padding: 11px 14px;
+  background-color: #14181c;
+  border: 1px solid #2a3440;
+  border-radius: 8px;
+  color: #ffffff;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.field-group input:focus {
+  border-color: #00c030;
+}
+
+/* TOMBOL */
+.btn-auth-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #00c030;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.btn-auth-submit:hover {
+  background-color: #00a828;
+}
+
+/* FOOTER */
+.auth-footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ab;
+}
+
+.auth-footer p + p {
+  margin-top: 10px;
+}
+
+.auth-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  color: #00c030;
+}
+
+.back-home-wrap {
+  margin-top: 15px;
+}
+
+.link-back {
+  color: #556677 !important;
+  font-weight: 400 !important;
+  font-size: 0.82rem;
+}
+
+/* PESAN BOX */
+.pesan-box {
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.pesan-box.error {
+  background-color: rgba(224, 80, 80, 0.12);
+  color: #e05050;
+  border: 1px solid rgba(224, 80, 80, 0.3);
+}
+
+.pesan-box.sukses {
+  background-color: rgba(0, 192, 48, 0.12);
+  color: #00c030;
+  border: 1px solid rgba(0, 192, 48, 0.3);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk — LetterboxdKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="auth-card">
+
+    <div class="auth-header">
+      <div class="logo-kecil">LETTERBOXD<span>Ku</span></div>
+      <h2>Masuk Akun</h2>
+    </div>
+
+    <!-- alert error -->
+    <div id="alertBox" class="pesan-box" style="display:none;"></div>
+
+    <!-- FORM LOGIN -->
+    <form id="loginForm">
+
+      <div class="field-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Masukkan username"
+          required
+        >
+      </div>
+
+      <div class="field-group">
+        <label for="password">Kata Sandi</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan kata sandi"
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn-auth-submit">
+        <span id="labelMasuk">Masuk</span>
+      </button>
+
+    </form>
+
+    <div class="auth-footer">
+      <p>
+        Belum punya akun?
+        <a href="register.html">Daftar Akun Baru</a>
+      </p>
+      <p class="back-home-wrap">
+        <a href="../index.html" class="link-back">← Kembali ke Halaman Utama</a>
+      </p>
+    </div>
+
+  </div>
+
+  <script src="js/login.js"></script>
+
+</body>
+</html>
